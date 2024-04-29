@@ -1,0 +1,130 @@
+/* LoginForm.css */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 60%; /* Center vertically in the viewport */
+    left: 50%;
+    transform: translate(-50%, 20%); /* Start 20% below the center */
+    width: 100%;
+    max-width: 200px; /* Adjust to fit the design */
+    padding: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    visibility: hidden;
+  }
+  
+  .login-form.fade-in {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* Move to the exact center */
+    visibility: visible;
+  }
+  
+  .login-input {
+    width: 200%;
+    padding: 15px;
+    position: relative;
+    right: 90px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-button {
+    width: 100%; /* Full width of the form container */
+    padding: 15px;
+    margin-top: 20px; /* Space from the input above */
+    margin-bottom: 20px; /* Space from the sign-up prompt below */
+    border: none;
+    border-radius: 100px; /* Highly rounded corners for the button */
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .signup-prompt {
+    color: #606060;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem; /* Adjust if necessary */
+  }
+  
+  .signup-link {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .login-form {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-form {
+      max-width: 90%;
+    }
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+  }
+  
+  .input-error {
+    border: 1px solid red; /* Red border indicates an error */
+  }
+  .success-message {
+    color: #28a745; /* A green color indicating success */
+    background-color: #daf5e9; /* A light green background for contrast */
+    border: 1px solid #c3e6cb; /* A subtle border to match the green theme */
+    padding: 15px;
+    margin-top: 30px; /* Give some space above the message */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* A subtle shadow for depth */
+    text-align: center;
+    font-size: 1.2rem; /* A larger font size to make the message more noticeable */
+    font-weight: bold;
+    width: 80%; /* Width relative to its container */
+    max-width: 400px; /* Max width of the message */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the message */
+    animation: popIn 0.5s ease-out forwards; /* Animate it popping in */
+  }
+  
+  /* Keyframes for the pop-in animation */
+  @keyframes popIn {
+    0% {
+      transform: translate(-50%, -60%) scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+  

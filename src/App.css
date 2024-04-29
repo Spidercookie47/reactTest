@@ -1,0 +1,14 @@
+/* App.css */
+
+/* Simple reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles for App component */
+  .App {
+    text-align: center;
+  }
+  

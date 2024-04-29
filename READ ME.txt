@@ -1,0 +1,25 @@
+# Test
+
+Simple instructions to set up and run the project.
+
+## Setup and Run
+
+**Step 1: Open the project**
+- Open Visual Studio Code.
+- Go to `File` > `Open Folder...` and select the project folder.
+
+**Step 2: Run the project**
+- Open the integrated terminal in Visual Studio Code by selecting `Terminal` > `New Terminal`.
+- Type the following command in the terminal and press Enter:
+npm run dev
+
+
+This will start the development server. Once running, you can view the application by navigating to `http://localhost:3000` in your web browser (or the appropriate URL based on the output in your terminal).
+
+if not u can use CMD in windows
+
+- Type cd reactTest 
+- Run the following command to start the development server:npm run dev
+
+
+Once the server starts, if the default port is in use, it will select the next available port. Look for the line in the terminal that says `Local:` followed by an address like `http://localhost:5174/`. Open this address in your web browser to view the application.
